@@ -4,7 +4,7 @@ Application Laravel pour le test technique ifort.
 
 ## Prérequis
 
-- PHP 8.2 ou supérieur
+- PHP 8.3 ou supérieur
 - Composer
 - Node.js et npm
 - SQLite (inclus par défaut avec PHP)

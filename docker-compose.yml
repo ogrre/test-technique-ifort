@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ifort-laravel-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www
+      - /var/www/vendor
+      - /var/www/node_modules
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - DB_CONNECTION=sqlite
+      - DB_DATABASE=/var/www/database/database.sqlite
+    networks:
+      - ifort-network
+
+networks:
+  ifort-network:
+    driver: bridge

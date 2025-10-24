@@ -1,0 +1,12 @@
+node_modules
+vendor
+.env
+.git
+.gitignore
+.gitattributes
+*.md
+docker-compose.yml
+.editorconfig
+.styleci.yml
+.DS_Store
+Thumbs.db
